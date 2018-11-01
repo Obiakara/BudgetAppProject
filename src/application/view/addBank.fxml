@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddBankController">
+   <children>
+      <Pane layoutX="-100.0" layoutY="-100.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="14.0" prefHeight="22.0" prefWidth="208.0" text="Lets get started">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="49.0" prefHeight="22.0" prefWidth="388.0" text="To get started, please enter a bank account">
+               <font>
+                  <Font name="Berlin Sans FB" size="13.0" />
+               </font>
+            </Label>
+            <VBox layoutX="14.0" layoutY="81.0" prefHeight="374.0" prefWidth="478.0" spacing="60.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="98.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="bankNameLabel" layoutX="14.0" layoutY="98.0" prefHeight="25.0" prefWidth="146.0" text="Bank Name:">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="bankNameTxtField" layoutX="200.0" layoutY="98.0" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="accHoldNameLabel" layoutX="14.0" layoutY="98.0" prefHeight="25.0" prefWidth="146.0" text="Account Holder Name:">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="accHoldNameTxtField" layoutX="200.0" layoutY="98.0" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="14.0" layoutY="171.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="accTypeLabel" layoutX="14.0" layoutY="171.0" prefHeight="25.0" prefWidth="146.0" text="Account Type:">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="accTypeComboBox" layoutX="200.0" layoutY="171.0" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="14.0" layoutY="231.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="accNumberLabel" layoutX="14.0" layoutY="231.0" prefHeight="25.0" prefWidth="146.0" text="Account Number:">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="accNumberTxtField" layoutX="200.0" layoutY="231.0" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="14.0" layoutY="293.0" spacing="40.0">
+                     <children>
+                        <Label fx:id="routNumbLabel" layoutX="14.0" layoutY="293.0" prefHeight="25.0" prefWidth="146.0" text="Routing Number:">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="routNumbTxtField" layoutX="200.0" layoutY="293.0" prefHeight="25.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="11.0" layoutY="459.0" spacing="300.0">
+               <children>
+                  <Button fx:id="skipButton" layoutX="14.0" layoutY="459.0" mnemonicParsing="false" onAction="#onClickSkipButton" prefHeight="25.0" prefWidth="89.0" text="Skip">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addBankButton" layoutX="397.0" layoutY="459.0" mnemonicParsing="false" onAction="#onClickAddBank" prefHeight="25.0" prefWidth="89.0" text="Add bank">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
